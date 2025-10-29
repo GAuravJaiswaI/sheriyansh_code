@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+ html, body {
+    height: 100%;
+    width: 100%;
+      background: #7bc9e1;
+   
+ }
+ .main{
+    height: 100%;
+    width: 100%;
+  background: #7bc9e1;
+ }
+
+
+ .card{
+    height: 300px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+      flex-direction: column;
+
+ }
+ .card p{
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 10px;
+ }
+.card img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+ 
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+ .Click{
+  
+     background: #7bc9e1;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+      padding: 10px 20px;
+ }
+   .Click:hover{
+      background: red;
+      cursor: pointer;
+   }
