@@ -1,0 +1,20 @@
+@import "button";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#red{
+    @include button-style(#f00);
+}
+#blue{
+    @include button-style(#00f);
+}
