@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width:100%;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 10% 40% 1fr 1fr;
+    grid-template-areas: "header header header "
+                        "section section section"
+                        "d1 d2 d4"
+                        "d1 d3 d4";
+  
+
+}
+header{
+    background-color: #fff;
+    grid-area: header;
+}
+section{
+    background-color: red;
+    grid-area: section;
+}
+#d1{
+    background-color: brown;
+    grid-area: d1;
+}
+#d2{
+    background-color: blue;
+    grid-area: d2;
+}
+#d3{
+    background-color: gray;
+    grid-area: d3;
+}
+#d4{
+    background-color: green;
+    grid-area: d4;
+}

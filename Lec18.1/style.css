@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background: #5b5b5b;
+  display: grid;
+  grid-template-columns: 1fr 30% 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-areas:
+    "div1 div2 div3"
+    "div1 div4 div5"
+    "div6 div6 div5";
+}
+#div1 {
+  background: red;
+  grid-area: div1;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://www.clicktorelease.com/code/gif/3.gif);
+}
+#div2 {
+  background: blue;
+  grid-area: div2;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://i.pinimg.com/originals/0a/c2/af/0ac2af5415f9062d54f9366bb4b75610.gif);
+  background-size: cover;
+  background-position: center;
+}
+#div3 {
+  background: green;
+  grid-area: div3;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmQwZHBwN2FuYWg2NXRjYjlvNmdsOW9ncnhzbThnOWY0cmZmd3BvdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cYf4OoUU4YZ0wIVWk3/giphy.gif);
+  background-size: cover;
+  background-position: center;
+}
+#div4 {
+  background: yellow;
+  grid-area: div4;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://i.gifer.com/embedded/download/XGiT.gif);
+  background-size: cover;
+  background-position: center;
+}
+#div5 {
+  background: purple;
+  grid-area: div5;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://i.gifer.com/Shjz.gif);
+  background-size: cover;
+  background-position: center;
+}
+#div6 {
+  background: orange;
+  grid-area: div6;
+  border: 1px transparent;
+  border-radius: 20px;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/656/134/small_2x/abstract-black-background-with-waving-surface-in-motion-loop-animation-video.jpg);
+  background-size: cover;
+  background-position: center;
+}
