@@ -6,3 +6,4 @@
 // // console.log(a.slice(1,5));
 let name = "gaurav"
 console.log(`my name is ${name}`);
+
