@@ -7,7 +7,6 @@
 let name = "gaurav"
 console.log(`my name is ${name}`);
 
-<<<<<<< HEAD
 let count  = 5;
 console.log(count);
 count++;
@@ -31,5 +30,3 @@ var hello = function(){
     console.log("hello");
 }
 hello();
-=======
->>>>>>> 382bc1aa38206530658cdd21ce48c54372965e6a
