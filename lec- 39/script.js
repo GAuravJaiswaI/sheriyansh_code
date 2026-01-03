@@ -61,3 +61,77 @@ function outer(){
 outer()(); // 10 // dono brackets lagane se pehle outer function call hoga
 // aur uske baad jo inner function return hoga wo call hoga
 // aur inner function apne parent function ke variable a ko access kar lega
+
+
+
+
+
+/*.                           array                       */
+
+// 1. cretion of array two type -
+
+let arr1 = [];
+let arr2 = new Array();
+
+//2. how to accewss array elements -
+
+let fruits = ['apple', 'banana', 'grapes', 'mango'];
+
+// access elements using index
+console.log(fruits[0]); // apple
+console.log(fruits[2]); // grapes
+
+
+
+//3. functions on array -
+//push -- add element at the end of array
+let n = [1,2,3];
+n.push('orange');
+console.log(n); // [1, 2, 3, 'orange']
+
+//pop -- remove element from the end of array
+let l = [1,2,3];
+l.pop();
+console.log(l); // [1, 2]
+
+
+//shift -- remove element from the start of array
+let e = [1,2,3];
+e.shift();
+console.log(e); // [2, 3]
+// starting se element remove karta hai
+
+
+//unshift -- add element at the start of array
+let f = [1,2,3];
+f.unshift(0);
+console.log(f); // [0, 1, 2, 3]
+// starting me element add karta hai
+
+//indexOf -- return index of element
+let g = ['a', 'b', 'c'];
+console.log(g.indexOf('b')); // 1
+console.log(g.indexOf('d')); // -1
+// agar element array me nhi hai to -1 return karta hai
+
+
+//array destructuring
+let h = [1,2,3,4,5];
+let [q, , w] = h; // q=1, w=3
+console.log(q);
+console.log(w);
+// 2nd element ko skip kar diya hai
+
+
+//                              filter, map, reduce                      //
+
+
+
+//filter
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+let evenNumbers = numbers.filter(function(num){
+    return num < 5 ;
+});
+console.log(evenNumbers); // [2, 4, 6, 8, 10]
+// filter function ek naya array return karta hai jisme wo sare elements hote hai
+// jo condition ko satisfy karte hai
