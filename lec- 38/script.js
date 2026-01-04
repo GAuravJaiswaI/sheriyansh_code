@@ -123,8 +123,35 @@ console.log(w);
 // 2nd element ko skip kar diya hai
 
 
-//                              filter, map, reduce                      //
 
+
+
+/*                            spread operator                     */
+
+
+let arrA = [1,2,3];
+let arrB = [...arrA,4,5,6];
+console.log(arrB); // [1, 2, 3, 4, 5, 6]
+// spread operator se hum ek array ke elements ko dusre array me copy kar sakte hai
+// ye shallow copy banata hai
+// agar hum direct = se copy karenge to wo reference copy banayega
+// jisme dono array same memory location ko point karenge
+// aur agar ek array me change karenge to dusre array me bhi change ho jayega
+
+
+
+/*                         iterwation methods of array               */
+// forEach,
+let colors = ['red', 'green', 'blue'];
+colors.forEach(function(val){             // for each ek callback function leta hai ,,/// for each me return ka koi use nhi hai
+                                            //for each sirf array ke liye use hota hai // ye
+                                            
+    console.log(val);
+});
+
+
+
+//                              filter,some, map, reduce                      //
 
 
 //filter
