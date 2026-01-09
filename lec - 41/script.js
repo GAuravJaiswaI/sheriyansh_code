@@ -76,5 +76,63 @@ let newarr = arr.map(function(val){
 });
 console.log(newarr);
 
+/*given an arry of bumbers , use filter() to create a new array where each number is even*/
+
+arr = [1,2,3,4,5];
+
+let evenarr = arr.filter(function(val){
+    return val%2 ===0;
+});
+console.log(evenarr);
 
 
+/* use reduce to find the total salary from an array of numbers [1000, 2000, 3000]*/
+let salary = [1000, 2000, 3000];
+let total = salary.reduce(function(acc, val){
+    return acc + val;   
+}, 0);
+console.log(total);
+
+
+/* create an array of anmes and use some() and  every() to test condition e.g. - all names longer then 3 characters*/
+let names = ["John", "Jane", "Jim", "Jill"];
+
+let allLongerThan3 = names.some(function(val){// if any one is true then return true
+    return val.length > 3;
+});
+console.log(allLongerThan3);
+
+let someLongerThan3 = names.every(function(val){// if all are true then return true
+    return val.length > 3;
+});
+console.log(someLongerThan3);
+
+
+/* create an object user and test the behaviour of the object . freeze() and object.seal()by adding /changing keys */
+
+let user = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+Object.freeze(user);// all the keys are frozen and cannot be changed
+user.name = "Jane";
+
+// object.seal()   // all the keys are sealed and cannot be changed but can be added
+// object.seal() is more restrictive than object.freeze()
+
+
+
+/* create nested object (user -> address -> city ) and access the city name inside it */
+let user3 = {
+    name: "John",
+    age: 30,
+    address: {
+        city:{
+            name: "New York",
+        }
+    }
+};
+//object destructuring - let {city} = user.address; // city is a variable and user.address is an object
+let {city} = user3.address;// city is a variable and user.address is an object
+console.log(city.name);
