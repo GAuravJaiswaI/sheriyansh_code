@@ -10,3 +10,15 @@ let v = Math.floor(a * 100);
 console.log(v);// without decimal number
 
 //
+
+
+let btn = document.getElementById('btn');
+let container = document.getElementById('container');
+
+
+btn.addEventListener('click', function () {
+    let randomColor = Math.floor(Math.random() * 255);
+    let randomColor2 = Math.floor(Math.random() * 255);
+    let randomColor3 = Math.floor(Math.random() * 255);
+    container.style.backgroundColor = 'rgb(' + randomColor + ',' + randomColor + ',' + randomColor + ')';
+});
