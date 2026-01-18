@@ -22,3 +22,7 @@ btn.addEventListener('click', function () {
     let randomColor3 = Math.floor(Math.random() * 255);
     container.style.backgroundColor = 'rgb(' + randomColor + ',' + randomColor + ',' + randomColor + ')';
 });
+
+
+
+
