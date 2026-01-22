@@ -17,12 +17,11 @@ let container = document.getElementById('container');
 
 
 btn.addEventListener('click', function () {
-    let randomColor = Math.floor(Math.random() * 255);
-    let randomColor2 = Math.floor(Math.random() * 255);
-    let randomColor3 = Math.floor(Math.random() * 255);
-    container.style.backgroundColor = 'rgb(' + randomColor + ',' + randomColor + ',' + randomColor + ')';
+    let randomColor = Math.floor(Math.random() * 256);
+    let randomColor2 = Math.floor(Math.random() * 256);
+    let randomColor3 = Math.floor(Math.random() * 256);
+    container.style.backgroundColor = `rgb(${randomColor}, ${randomColor2}, ${randomColor3})`;
 });
 
-
-
+// array and object
 
