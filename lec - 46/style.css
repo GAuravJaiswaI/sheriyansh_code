@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    width:20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+  margin-top: 10%;
+}
+.img-container{
+    width: 90%; 
+   
+}
+.img-container .profile-img{
+    width: 100%;
+    border-radius: 5px;
+     
+}
+.like-icon{
+    position: absolute;
+    margin-left: 2.2%;
+    transform: translate(-50%, -50%) scale(0) rotate(0);
+    transition: cubic-bezier(.59,.72,0,1.77);
+
+}
+/* .like-icon.active{
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transition: cubic-bezier(.59,.72,0,1.77); */
+
+
+h2{
+    padding-top: 10px;
+}
+
