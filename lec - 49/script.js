@@ -1,13 +1,11 @@
-var elem = document.querySelectorAll(".elem");
 var allBTN = document.querySelectorAll("button");
 
-allBTN.forEach(function (elem) {
-    elem.addEventListener("click", function () {
-        if (elem.innerHTML == "add") {
-            elem.innerHTML = "remove"
+allBTN.forEach(function (btn) {  // 👈 "btn" clearer है
+    btn.addEventListener("click", function () {
+        if (btn.innerHTML == "add") {
+            btn.innerHTML = "remove"
         } else {
-            elem.innerHTML = "add"
+            btn.innerHTML = "add"
         }
     })
-
 })
