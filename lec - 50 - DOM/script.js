@@ -61,7 +61,7 @@ const reels = [
     },
     {
         username: "code with sheriyansh",
-        likecount: 300,
+        likecount: '',
         isliked: true,
         commentcount: 30,
         sharecount: 15,
@@ -95,5 +95,52 @@ reels.forEach(function (elem) {
     </div>`
 })
 
-// 👇 DOM में inject करो!
 document.querySelector('.all-reels').innerHTML = sum;
+
+var likeIcon = document.querySelectorAll(".like-icon");
+
+likeIcon.forEach(function (icon, index) {
+    icon.addEventListener("click", function () {
+        var love = icon.querySelector("i");
+        if (love.classList.contains("ri-heart-line")) {
+            love.classList.remove("ri-heart-line");
+            love.classList.add("ri-heart-fill");
+            love.style.color = "red";
+            reels[index].likecount++;
+        }
+        else {
+            love.classList.remove("ri-heart-fill");
+            love.classList.add("ri-heart-line");
+            love.style.color = "black";
+            reels[index].likecount--;
+        }
+        icon.nextElementSibling.innerText = reels[index].likecount;
+    })
+})
+
+
+
+
+var allBTN = document.querySelectorAll("button");
+
+allBTN.forEach(function (btn) {  // 👈 "btn" clearer है
+    btn.addEventListener("click", function () {
+        if (btn.innerHTML == "follow") {
+            btn.innerHTML = "following"
+        } else {
+            btn.innerHTML = "follow"
+        }
+    })
+})
+
+var videos = document.querySelectorAll("video");
+
+videos.forEach(function (video) {
+    video.addEventListener("click", function () {
+        if (video.muted) {
+            video.muted = false;
+        } else {
+            video.muted = true;
+        }
+    })
+})
